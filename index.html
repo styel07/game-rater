@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>AngularJS Game Rater</title>
+      <script>document.write('<base href="' + document.location + '" />');</script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+      <link rel="stylesheet" href="styles.css" />
+      <script data-require="angular.js@1.4.x" src="https://code.angularjs.org/1.4.9/angular.js" data-semver="1.4.9"></script>
+      <script src="app.js"></script>
+  </head>
+
+  <body ng-controller="myCtrl">
+
+    <div class="container">
+      <div class="col-xs-12 col-xs-offset-5">
+        <h1 class="center-block">Game Scores</h1>
+      </div>
+
+      <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-offset-2 col-lg-8">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h1>90</h1>
+          </div>
+          <div class="panel-body" ng-repeat="nine in cat90 | orderBy: 'title'">
+            <span>{{nine.title}}</span>
+            <span class="score">{{nine.metacriticScore}}</span>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-offset-2 col-lg-8">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h1>80</h1>
+          </div>
+          <div class="panel-body" ng-repeat="eight in cat80 | orderBy: 'title'">
+            <span>{{eight.title}}</span>
+            <span class="score">{{eight.metacriticScore}}</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-offset-2 col-lg-8">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h1>70</h1>
+          </div>
+          <div class="panel-body" ng-repeat="seven in cat70 | orderBy: 'title'">
+            <span>{{seven.title}}</span>
+            <span class="score">{{seven.metacriticScore}}</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-offset-2 col-lg-8">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h1>60</h1>
+          </div>
+          <div class="panel-body" ng-repeat="six in cat60 | orderBy: 'title'">
+            <span>{{six.title}}</span>
+            <span class="score">{{six.metacriticScore}}</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-offset-2 col-lg-8">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h1>50</h1>
+          </div>
+          <div class="panel-body" ng-repeat="five in cat50 | orderBy: 'title'">
+            <span>{{five.title}}</span>
+            <span class="score">{{five.metacriticScore}}</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-offset-2 col-lg-8">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h1>40</h1>
+          </div>
+          <div class="panel-body" ng-repeat="four in cat40 | orderBy: 'title'">
+            <span>{{four.title}}</span>
+            <span class="score">{{four.metacriticScore}}</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-offset-2 col-lg-8">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h1>30</h1>
+          </div>
+          <div class="panel-body" ng-repeat="three in cat30 | orderBy: 'title'">
+            <span>{{three.title}}</span>
+            <span class="score">{{three.metacriticScore}}</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-offset-2 col-lg-8">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h1>20</h1>
+          </div>
+          <div class="panel-body" ng-repeat="two in cat20 | orderBy: 'title'">
+            <span>{{two.title}}</span>
+            <span class="score">{{two.metacriticScore}}</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-offset-2 col-lg-8">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h1>10</h1>
+          </div>
+          <div class="panel-body" ng-repeat="ten in cat10 | orderBy: 'title'">
+            <span>{{ten.title}}</span>
+            <span class="score">{{ten.metacriticScore}}</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-offset-2 col-lg-8">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h1>0</h1>
+          </div>
+          <div class="panel-body" ng-repeat="zero in cat0 | orderBy: 'title'">
+            <span>{{zero.title}}</span>
+            <span class="score">{{zero.metacriticScore}}</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+</html>
